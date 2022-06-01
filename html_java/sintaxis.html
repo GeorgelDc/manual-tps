@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x.icon" href="/Users/GEORGE/Desktop/SENA/MANUAL/img/logojs.png">
+    <link rel="stylesheet" href="/Users/GEORGE/Desktop/SENA/MANUAL/css_java/style.css">
+    <title>MANUAL DE JAVASCRIPT 2.0</title>
+</head>
+<body>
+    <div id="general">
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="logo nav-link"></a>
+            <ul class="nav-menu">
+               <li class="nav-menu-item"><a href="index.html" class="nav-menu-link nav-link">Inicio</a></li>
+               <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Sintaxis</a></li>
+               <li class="nav-menu-item"><a href="manejoeventos.html" class="nav-menu-link nav-link">Manejo de eventos</a></li>
+               <li class="nav-menu-item"><a href="formularios.html" class="nav-menu-link nav-link">Formularios</a></li>
+               <li class="nav-menu-item"><a href="imagenes.html" class="nav-menu-link nav-link">Imagenes</a></li>
+               <li class="nav-menu-item"><a href="autor.html" class="nav-menu-link nav-link">Autor</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <h1>Bienvenido al manual de JavaScript 2.0</h1>
+    <h4>Realizado por el Tec. Georgel J. Duran</h4>
+    <div id="logojs"></div>
+    <br><br>
+    <h2>Sintaxis</h2>
+    <p>
+        El código JavaScript del que hablaremos en este manual va embebido en un documento <strong>HTML</strong>,
+        y no tendremos en cuenta la reciente aparición de los scripts de servidor que pueden ir
+         también codificados en JavaScript. Normalmente se escribe el código entre las etiquetas
+          <b>&lt;SCRIPT&gt; y &lt;SCRIPT&gt;</b> de la página Web. Se recomienda que dicho código vaya
+           incluido en la cabecera del documento, es decir, entre las etiquetas <strong>&lt;HEAD&gt; y &lt;/HEAD&gt;</strong>.
+            De esta manera, haremos que se cargue el script antes de ser llamado por el manejador de eventos en
+             el cuerpo del documento, <strong>&lt;BODY&gt;&lt;/BODY&gt;</strong>, ya que si fuera al revés el manejador de eventos
+              no tendría nada a qué referirse.
+                Volvamos sobre el ejemplo de variables globales y locales para incluirlo ya en una página HTML capaz
+                 de ser visualizada por un browser. Las modificaciones aparecen en el siguiente ejemplo.
+    </p>
+    <div>
+        <img src="/Users/GEORGE/Desktop/SENA/MANUAL/img/prueba111.png" alt="">
+    </div>
+    <div class="a">
+        <a href="pruebaNo1.html"><span class="pulse">Pulse aqui</span></a>
+    </div>
+    <!--La etique b para resaltar-->
+    <!--AQUI SE DEBEN AGREGAR LAS IMAGENES DE PRUEBA NO1. EN LA MEDIDA DE LOS POSIBLE UN GIFS-->
+    <!--Y POSIBLE LINK A LA PAGINA-->
+
+    <p>
+        Como se puede observar, hemos incluido, como se mencionó previamente, el código de script en sus etiquetas
+         correspondientes y dentro de la cabecera del documento. Una vez dentro del cuerpo del documento, se ha incluido
+          un manejador de eventos onLoad, que llama al script definido en la carga de la página, ejecutándolo. El script es una
+           función que contiene un método, <strong>alert()</strong>, que despliega una ventana con el texto definido como argumento del método.
+    </p>
+
+    <p>
+        A la hora de diseñar nuestras páginas y scripts se debe pensar también en los usuarios que no disponen de browsers capaces de tratar nuestros 
+        diseños. Por ello existe una etiqueta específica para estos últimos: <strong>&lt;NOSCRIPT&gt;&lt;/NOSCRIPT&gt;</strong>. El contenido de estas etiquetas es tratado por los 
+        browsers que no admiten scripts, mientras que no se interpreta por los que sí lo hacen.
+    </p>
+    <p>
+        Para usar correctamente el JavaScript en un browser, es importante saber cómo funciona éste último a la hora de visualizar
+         el diseño y la composición del texto plano modificado con códigos HTML. Esta composición a partir del diseño especificado se
+          realiza siempre secuencialmente, es decir, el browser comienza desde la primera línea de la página y continua descendiendo hasta
+           el final de la misma. Por ello el JavaScript sólo refleja código que ya se haya encontrado. Por ejemplo, definamos en un formulario
+            dos entradas de texto:
+    </p>
+    <img src="/Users/GEORGE/Desktop/SENA/MANUAL/img/prueba22.png" alt="">
+    <!--PONER IMAGEN DE LO ESCRITO EN PRUEBA22-->
+    <p>
+        A partir de su definición ambos elementos se pueden reflejar en JavaScript como los objetos document.formula.usuario y 
+        document.formula.edad respectivamente.Sin embargo no se pueden usar si no están previamente definidos.Por ejemplo, 
+        podemos visualizar sus valores mediante un script incluido después de la definición del formulario:
+    </p>
+    <!--PONER IMAGEN DE LO ESCRITO EN PRUEBA2-->
+    <img src="/Users/GEORGE/Desktop/SENA/MANUAL/img/prueba2.png" alt="">
+    <p>
+        Sin embargo si lo ponemos antes no funcionará y aparecerá un error por no estar definido. Otro ejemplo: si hemos definido el título del documento como:
+    </p>
+    <img src="/Users/GEORGE/Desktop/SENA/MANUAL/img/prueba222.png" alt="">
+    <!--PONER IMAGEN TITLE DE PRUEBA22-->
+    <p>
+        el browser visualiza en la barra de su ventana dicho título. Si intentamos ahora cambiar el valor del título:
+    </p>
+    <!--IMAGEN CON PRONTA EXPLICACION, RELEER PAGINA-->
+    <p>
+        éste no cambiará, ni siquiera generará un error.
+    </p>
+    <p>
+        Antes de centrarnos en partes internas de un documento, vamos a recordar cómo insertar scripts. Hay dos maneras distintas:
+        <br><br>
+        <ul>
+        <li>Como sentencias de control y funciones usando las etiquetas <strong>&lt;SCRIPT&gt;&lt;/SCRIPT&gt;</strong>.</li> 
+        <li>Como manejadores de eventos usando las demás etiquetas de HTML.</li> 
+        </ul>  
+    </p>
+    <p>
+        <strong>Recordemos</strong> la opción <strong>&lt;SCRIPT LANGUAGE="JavaScript&gt;</strong> de especificación de lenguaje de código, 
+        y digamos que dentro de estas etiquetas puede ir un número indeterminado de instrucciones. Asimismo, 
+        ha de resaltarse que JavaScript es "case sensitive", es decir, hace distinción entre letras mayúsculas y 
+        letras minúsculas. Es importante entender la diferencia entre definir una función e invocar una función. 
+        Definirla le da nombre y especifica qué instrucciones ejecuta al ser llamada e invocarla hace que realmente 
+        ejecute las instrucciones.
+    </p>
+    <h3>Caso practico</h3>
+    <br>
+    <div class="a">
+        <a href="cp.html"><span class="pulse">Pulse aqui</span></a>
+    </div>
+    <!--CASO PRACTICO BOTON DIRIGIDO A OTRA PAGINA-->
+</div>
+</div>
+    
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <script lang="JavaScript">
+        function calcular(form)
+        {
+            if(confirm("¿Esta seguro?"))
+            form.resultado.value = eval(form.expr.value);
+            else
+            alert("Vuelva a intentarlo");
+        }
+    </script>
+</head>
+<body bgcolor="#00AA00" text="#FFFFFF" link="#0000FF" vlink="#0000FF" alink="#0000FF">
+    <center><h1>CALCULADORA</h1>
+    <br>
+    <form>
+        Introduzca expresion :
+        <input type="text" name="expr" size="15">
+        <input type="button" value="Calcular" onclick="calcular(this.form)">
+        <br><br>
+        Resultado :
+        <input type="text" name="resultado" size="15">
+        <br>
+    </form></center> 
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x.icon" href="/Users/GEORGE/Desktop/SENA/PORYECTO TECNICO PROGRAMADOR SOFTWARE/MANUAL DE JAVASCRIPT/img/logojs.png">
+    <link rel="stylesheet" href="/Users/GEORGE/Desktop/SENA/PORYECTO TECNICO PROGRAMADOR SOFTWARE/MANUAL DE JAVASCRIPT/css java/cp.css">
+    <title>Caso practico JavaScript</title>
+</head>
+<body>
+    <h1>CASO PRACTICO</h1>
+    <p>
+        Para terminar este apartado vamos a estudiar un ejemplo que resume todo 
+        lo anteriormente explicado.<br> Se trata de un script en un formulario con una 
+        llamada de manejador de eventos. El código lo podemos ver a continuación:
+    </p>
+    <!--INSERTAR IMAGENES DE CODIGO PRUEBA 3 Y PRUEBA 31-->
+    <p>
+        Lo primero que nos encontramos es la definición en la cabecera de documento de 
+        la función calcula(form) que tiene como argumento el propio formulario. 
+        Las instrucciones que contiene se rigen por un bloque if - else que valora un método 
+        no visto hasta ahora confirm("cadena"):
+    </p>
+    <!--AGREGAR FORMULA CITADA-->
+    <p>
+        Lo que hace es sacar una ventana, como la que aparecía con el método alert("cadena") 
+        con la única diferencia que ofrece dos botones: uno de cancelación y otro de 
+        confirmación.La elección del usuario es lo que impone la condición del bloque if. 
+        En la línea
+    </p>
+    <!--AGREGAR FORMULA CITADA 2-->
+    <p>
+        Se controla si el usuario ha elegido Aceptar. En este caso el valor del cuadro de texto "resultado" 
+        del formulario definido en el cuerpo del fichero, toma el valor del resultado, valga la redundancia, 
+        de la expresión que haya sido introducida en el cuadro de texto "expr". Si el usuario elige el botón de 
+        cancelar, entramos en el else del bloque, haciendo que aparezca una ventana con el método alert(), diciendo "Vuelva a intentarlo".
+        Observamos también una función nueva hasta ahora: eval("cadena").Lo que hace esta función es transformar a valor numérico la expresión matemática 
+        introducida en la cadena. En nuestro caso la cadena viene dada por el contenido del cuadro de texto "expr". Hay que señalar que este script no valida la entrada de datos, por lo que si no introducimos una expresión susceptible de evaluación matemática, obtendremos un error.
+    </p>
+</body>
+</html>

@@ -1,0 +1,126 @@
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+    background: url(img/fondo.jpg.png);
+}
+div#general
+{
+    margin: auto;
+    width: 1120px;
+    height: 2292px;
+    background-color: aliceblue;
+}
+#logojs
+{
+    height: 6.5%;
+    width: 9.5%;
+    margin: 2% 0 0 45%;
+    background: url(img/js.png) center/100% 100%;
+}
+img
+{
+    width: 600px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    margin-left: 260px;
+}
+.header
+{
+    background-color: rgb(233, 0, 0);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.nav
+{
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 992px; 
+    margin: 0 auto;
+}
+.nav-link
+{
+    color: aliceblue;
+    text-decoration: none;
+}
+.logo
+{
+    height: 80px;
+    background: url(img/html.png);
+    padding: 0 40px;
+    line-height: 80px;
+    list-style: none;
+}
+.nav-menu-item
+{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+.nav-menu-link
+{
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+.nav-menu-link:hover
+{
+    background-color: rgba(182, 127, 0, 0.938); 
+    transition: 0.5s;
+}
+.nav-menu
+{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+h1, h2, h4, h3, img
+{
+    text-align: center;
+}
+ul 
+{
+    list-style-type: circle;
+}
+p
+{
+    margin-top: 12px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.a
+{
+    margin:5% 0 0 40%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    background-color: #141414;
+    color: aliceblue;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease all;
+    border-radius: 5px;
+}
+.a:hover
+{
+    background-color: #e0ac1c;
+}

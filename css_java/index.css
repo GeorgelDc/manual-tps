@@ -1,0 +1,170 @@
+/* Modificacion para menu responsive Mayo 30 / 2022 */
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+    background: url(/Users/GEORGE/Desktop/SENA/MANUAL/img/fondo3.gif);
+}
+div#general
+{
+    margin: auto;
+    width: 1120px;
+    height: 2292px;
+    background-color: aliceblue;
+}
+.programacion
+{
+    width: 1120px;
+    height: 270px;
+    background: none;
+    display: flexbox;
+    
+}
+.gif1
+{
+    width: 300px;/*500 tamaño original*/
+    height: 258px;/*430 tamaño original*/
+    background: url(/Users/GEORGE/Desktop/SENA/MANUAL/img/programacion2.gif) center/100% 100%;
+    margin-bottom: 20px;
+    margin-left: 27px;
+    display: inline-block; 
+}
+.gif2
+{
+    width: 350px;/*800 tamaño original*/
+    height: 258px;/*600 tamaño original*/
+    background: url(/Users/GEORGE/Desktop/SENA/MANUAL/img/programacion.gif) center/100% 100%;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.gif3
+{
+    width: 400px;/*540 tamaño original*/
+    height: 258px;/*303 tamaño original*/
+    background: url(/Users/GEORGE/Desktop/SENA/MANUAL/img/pc.gif) center/100% 100%;
+    margin-bottom: 20px;
+    display: inline-block; 
+}
+#logojs
+{
+    height: 6.5%;
+    width: 9.5%;
+    margin: 2% 0 0 45%;
+    background: url(/Users/GEORGE/Desktop/SENA/MANUAL/img/js.png) center/100% 100%;
+}
+img
+{
+    width: 600px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    margin-left: 260px;
+}
+.header
+{
+    background-color: #293462;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.nav
+{
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 992px; 
+    margin: 0 auto;
+}
+.nav-link
+{
+    color: aliceblue;
+    text-decoration: none;
+}
+.logo
+{
+    height: 80px;
+    background: url(/Users/GEORGE/Desktop/SENA/MANUAL/img/iconops.jpg);
+    padding: 0 40px;
+    line-height: 80px;
+    list-style: none;
+}
+.nav-menu-item
+{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+.nav-menu-link
+{
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+/*
+{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    display: none;
+}*/ 
+.nav-menu-link:hover
+{
+    background-color: rgba(0, 170, 182, 0.938); 
+    transition: 0.5s;
+}
+.nav-menu
+{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+h1, h2, h4, h3, img
+{
+    text-align: center;
+}
+ul 
+{
+    list-style-type: circle;
+}
+p
+{
+    margin-top: 12px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.a
+{
+    margin:5% 0 0 40%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    background-color: #141414;
+    color: aliceblue;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease all;
+    border-radius: 5px;
+}
+.a:hover
+{
+    background-color: #2d9ec7;
+}
